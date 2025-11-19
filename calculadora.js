@@ -16,9 +16,18 @@ function divide(x,y)
     if(y==0){return "Syntax Error: Division entre cero"};
     return x/y;
 }
-function convierteString_a_Numero(a)
+function convierteString_a_Numero(n)
 {
-    return parseFloat(a)
+    n=parseFloat(n);
+    if(typeof(n)==`NaN`)
+    {
+        n="Has ingresado un dato no numerico"
+        return n;
+    }
+    else
+    {
+        return n;
+    } 
 }
 //Entrada de numeros por el usuario
 let a=prompt("Ingresa el primer numero: ");
@@ -26,6 +35,7 @@ let b=prompt("Ingresa el segundo numero: ");
 console.log(typeof(a));//Nos muestra que en efecto entra un string
 //convertimos texto a numeros.
 a=convierteString_a_Numero(a);
+console.log(typeof(a))
 b=convierteString_a_Numero(b);
 
 let op1=suma(a,b);
