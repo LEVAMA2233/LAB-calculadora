@@ -15,8 +15,15 @@ function divide(x,y)
 {
     return x/y;
 }
-let a=5;
-let b=2;
+function convierteString_a_Numero(a)
+{
+    return parseFloat(a)
+}
+
+let a="5";
+let b="2";
+a=convierteString_a_Numero(a);
+b=convierteString_a_Numero(b);
 
 let op1=suma(a,b);
 console.log(`La suma de ${a} + ${b} es: ${op1}`);
