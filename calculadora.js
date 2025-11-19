@@ -15,3 +15,17 @@ function divide(x,y)
 {
     return x/y;
 }
+let a=5;
+let b=2;
+
+let op1=suma(a,b);
+console.log(`La suma de ${a} + ${b} es: ${op1}`);
+
+let op2=resta(a,b);
+console.log(`La resta de ${a} - ${b} es: ${op2}`);
+
+let op3=multiplica(a,b);
+console.log(`La multiplicacion de ${a}x${b} es: ${op3}`);
+
+let op4=divide(a,b);
+console.log(`La division de ${a}/${b} es: ${op4}`);
